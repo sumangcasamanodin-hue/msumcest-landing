@@ -3,7 +3,7 @@ MSU-MCEST official landing page built with HTML &amp; CSS — BSCS2 activity
 
 # MSU-MCEST Landing Page
 
-An official-looking landing page for **Mindanao State University - Maigo College of Education, Science and Technology (MSU-MCEST)**, built as part of an IT/Computer Science activity.
+An official-looking landing page for **Mindanao State University - Maigo College of Education, Science and Technology (MSU-MCEST)**, built as part of an Computer Science activity.
 
 ## 🛠️ Built With
 - HTML5
