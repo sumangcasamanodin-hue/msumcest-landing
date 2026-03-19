@@ -11,10 +11,9 @@
 </head>
 <body>
 
-  
   <nav>
     <div class="nav-brand">
-      <div class="nav-logo">MSU</div>
+      <img src="Mcest_logo.jpg" alt="MSU-MCEST Logo" class="nav-logo" />
       <div class="nav-name">
         MSU-MCEST
         <span>Maigo, Lanao del Norte</span>
@@ -29,7 +28,6 @@
     </ul>
   </nav>
 
- 
   <section class="hero" id="home">
     <div class="hero-bg"></div>
     <div class="hero-content">
@@ -59,7 +57,6 @@
     </div>
   </section>
 
- 
   <div class="stats-strip">
     <div class="stat-item reveal"><div class="stat-num">1948</div><div class="stat-label">Founded</div></div>
     <div class="stat-item reveal"><div class="stat-num">75+</div><div class="stat-label">Years of Service</div></div>
@@ -90,7 +87,6 @@
     </div>
   </section>
 
-
   <section class="programs-section" id="programs">
     <div class="programs-header reveal">
       <p class="section-tag" style="color:var(--gold);">Academic Offerings</p>
@@ -98,67 +94,57 @@
       <p class="sub">Degree and technical-vocational programs designed to produce globally competitive graduates.</p>
     </div>
     <div class="programs-grid">
-
       <div class="program-card reveal">
         <span class="prog-icon">💻</span>
         <h3>Bachelor of Science in Computer Science</h3>
         <span class="prog-abbr">BSCS</span>
         <p>Builds strong foundations in algorithms, software engineering, data structures, and computing systems for careers in tech and research.</p>
       </div>
-
       <div class="program-card reveal">
         <span class="prog-icon">🎒</span>
         <h3>Bachelor of Elementary Education</h3>
         <span class="prog-abbr">BEED</span>
         <p>Prepares future elementary school teachers with strong pedagogical skills and subject mastery to nurture young learners effectively.</p>
       </div>
-
       <div class="program-card reveal">
         <span class="prog-icon">🔧</span>
         <h3>Bachelor of Technology and Livelihood Education</h3>
         <span class="prog-abbr">BTLED</span>
         <p>Combines technical-vocational skills with education methods, preparing teachers for home economics, industrial arts, and livelihood tracks.</p>
       </div>
-
       <div class="program-card reveal">
         <span class="prog-icon">⚖️</span>
         <h3>Bachelor of Science in Criminology</h3>
         <span class="prog-abbr">BSCRIM</span>
         <p>Covers criminal justice, forensic science, law enforcement, and public safety — preparing graduates for careers in law and order.</p>
       </div>
-
       <div class="program-card reveal">
         <span class="prog-icon">🤝</span>
         <h3>Bachelor of Science in Social Work</h3>
         <span class="prog-abbr">BSSW</span>
         <p>Trains compassionate professionals to assist individuals, families, and communities in addressing social challenges and promoting well-being.</p>
       </div>
-
       <div class="program-card reveal">
         <span class="prog-icon">🍽️</span>
         <h3>Bachelor of Science in Hospitality Management</h3>
         <span class="prog-abbr">BSHM</span>
         <p>Develops leaders in the hospitality and tourism industry with expertise in hotel operations, food service, and events planning.</p>
       </div>
-
       <div class="program-card reveal">
         <span class="prog-icon">🏗️</span>
         <h3>Bachelor of Industrial Technology</h3>
         <span class="prog-abbr">BIT</span>
         <p>A hands-on program covering electronics, electrical, mechanical, and drafting technology for industrial and technical careers.</p>
       </div>
-
       <div class="program-card reveal">
         <span class="prog-icon">📐</span>
         <h3>Diploma in Electronics Technology</h3>
         <span class="prog-abbr">DET</span>
         <p>A focused diploma program equipping students with practical electronics skills for immediate industry employment and technical work.</p>
       </div>
-
     </div>
   </section>
 
-  
   <section id="why">
     <div style="text-align:center;" class="reveal">
       <p class="section-tag">Why Choose Us</p>
@@ -174,7 +160,6 @@
     </div>
   </section>
 
- 
   <section class="contact-section" id="contact">
     <div class="reveal">
       <p class="section-tag">Get In Touch</p>
@@ -191,7 +176,6 @@
       <a href="https://msumcest.edu.ph" target="_blank" class="btn-primary" style="background:var(--gold);color:var(--dark);">Visit Official Website →</a>
     </div>
   </section>
-
 
   <footer>
     <div class="footer-brand">MSU-MCEST<span>Mindanao State University System · Since 1948</span></div>
@@ -216,10 +200,20 @@
     window.addEventListener('scroll', () => {
       if (window.scrollY > 80) {
         nav.style.background = 'rgba(250,246,239,0.97)';
+        nav.style.backdropFilter = 'blur(14px)';
+        nav.style.borderColor = 'rgba(201,168,76,0.25)';
         nav.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
+        document.querySelectorAll('.nav-links a').forEach(a => a.style.color = '#3D2B10');
+        document.querySelector('.nav-name').style.color = '#7B1C2E';
+        document.querySelector('.nav-name span').style.color = '#8A7060';
       } else {
-        nav.style.background = 'rgba(250,246,239,0.85)';
+        nav.style.background = 'transparent';
+        nav.style.backdropFilter = 'blur(0px)';
+        nav.style.borderColor = 'transparent';
         nav.style.boxShadow = 'none';
+        document.querySelectorAll('.nav-links a').forEach(a => a.style.color = 'rgba(255,255,255,0.85)');
+        document.querySelector('.nav-name').style.color = '#FFFFFF';
+        document.querySelector('.nav-name span').style.color = 'rgba(255,255,255,0.6)';
       }
     });
   </script>
